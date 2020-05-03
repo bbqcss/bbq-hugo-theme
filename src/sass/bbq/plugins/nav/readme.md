@@ -18,7 +18,7 @@ A responsive, pure css navigation menu:
 <nav class="demo">
   <a href="#" class="brand">
     <img class="logo" src="/web/img/basket.png" />
-    <span>Picnic CSS</span>
+    <span>BBQ CSS</span>
   </a>
 
   <!-- responsive-->
@@ -62,7 +62,7 @@ nav.imponent {
 <nav class="demo imponent">
   <a href="#" class="brand">
     <img class="logo" src="/web/img/basket.png" />
-    <span>Picnic CSS</span>
+    <span>BBQ CSS</span>
   </a>
 </nav>
 ```
@@ -76,7 +76,7 @@ Just get anything you want inside the nav, most things should work.
 <div style="overflow: hidden;height: 250px;"> <!-- For Demo, Represents the body -->
 
 <nav class="demo">
-  <a href="#" class="brand">Picnic CSS</a>
+  <a href="#" class="brand">BBQ CSS</a>
 
   <!-- responsive-->
   <input id="bmenug" type="checkbox" class="show">
@@ -94,7 +94,7 @@ Just get anything you want inside the nav, most things should work.
 <div style="overflow: hidden;height: 250px;"> <!-- For Demo, Represents the body -->
 
 <nav class="demo">
-  <a href="#" class="brand">Picnic CSS</a>
+  <a href="#" class="brand">BBQ CSS</a>
 
   <!-- responsive-->
   <input id="cmenug" type="checkbox" class="show">
@@ -132,7 +132,7 @@ Change sass variable `$bbq-nav-open-left: false !default;` to
 <div style="overflow: hidden;height: 250px;"> <!-- For Demo, Represents the body -->
 
 <nav class="demo">
-  <a href="#" class="brand">Picnic CSS</a>
+  <a href="#" class="brand">BBQ CSS</a>
 
   <!-- responsive-->
   <input id="cmenug" type="checkbox" class="show">
