@@ -1,1 +1,1 @@
-# bbq-hugo-theme
+# BBQ Hugo Theme
