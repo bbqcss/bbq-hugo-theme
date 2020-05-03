@@ -1,0 +1,19 @@
+{
+  "name": "bbq-hugo-theme",
+  "version": "1.0.0",
+  "description": "Hugo BBQ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbqcss/bbq-hugo-theme.git"
+  },
+  "author": "Matthew Antone",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bbqcss/bbq-hugo-theme/issues"
+  },
+  "homepage": "https://github.com/bbqcss/bbq-hugo-theme#readme"
+}
