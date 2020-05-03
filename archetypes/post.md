@@ -14,6 +14,6 @@ images: []
 categories: []
 tags: []
 options:
-  show_sidebar: true
+  showSidebar: true
 ---
 

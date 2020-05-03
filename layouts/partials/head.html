@@ -20,7 +20,7 @@
   <!-- Twitter Card -->
   {{- template "_internal/twitter_cards.html" . -}}
   <!-- Add vendor styles -->
-  {{ $indexCss := resources.Match "sass/index.scss" | resources.ToCSS | toresources.Minify }}
+  {{ $indexCss := resources.Match "sass/index.scss" | resources.ToCSS | resources.Minify }}
   <link rel="stylesheet" href="{{ $indexCss.Permalink }}" media="screen" />
 </head>
 <!-- end head -->
