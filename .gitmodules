@@ -1,0 +1,3 @@
+[submodule "src/sass/springboard"]
+	path = src/sass/springboard
+	url = https://github.com/springboardcss/springboard

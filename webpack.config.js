@@ -3,45 +3,47 @@ const FixStyleOnlyEntriesPlugin = require("webpack-fix-style-only-entries");
 
 const path = require('path');
 
-module.exports = {
-  entry: {
-    bbq: './src/sass/index.scss',
-  },
-  output: {
-    path: path.resolve(__dirname, 'static/assets/'),
-  },
-  module: {
-    rules: [
-      {
-        test: /\.s[ac]ss$/i,
-        use: [
-          MiniCssExtractPlugin.loader,
-          'css-loader',
-          {
-            loader: 'sass-loader',
-            options: {
-              sourceMap: true,
-              sassOptions: {
-                outputStyle: 'compressed',
-                sourceComments: false,
+module.exports = env => { 
+
+  const style = env.NODE_ENV === 'production' ? 'compressed' : 'expanded'
+  const ext = env.NODE_ENV === 'production' ? '.min.css' : '.css'
+  // const target = env.NODE_ENV === 'production' ? 'assets' : 'dev'
+
+
+  return {
+    entry: {
+      'springboard': './src/sass/index.scss',
+    },
+    output: {
+      path: path.resolve(__dirname, 'static/css/'),
+    },
+    module: {
+      rules: [
+        {
+          test: /\.s[ac]ss$/i,
+          use: [
+            MiniCssExtractPlugin.loader,
+            'css-loader',
+            {
+              loader: 'sass-loader',
+              options: {
+                sourceMap: true,
+                sassOptions: {
+                  outputStyle: style, // figure out how to make this conditional Node env?
+                  sourceComments: false,
+                },
               },
             },
-          },
-          // 'sass-loader',
-          // 'postcss-loader',
-          // 'postcss-cssnext',
-          // 'cssnano',
-        ],
-      },
+          ],
+        },
+      ],
+    },
+    plugins: [
+      new FixStyleOnlyEntriesPlugin(),
+      new MiniCssExtractPlugin({
+        filename: `[name]${ext}`,
+        chunkFilename: `[id]${ext}`,
+      }),
     ],
-  },
-  plugins: [
-    new FixStyleOnlyEntriesPlugin(),
-    new MiniCssExtractPlugin({
-      // Options similar to the same options in webpackOptions.output
-      // both options are optional
-      filename: '[name].css',
-      chunkFilename: '[id].css',
-    }),
-  ],
+  }
 };
