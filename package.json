@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack -w --mode=development --env.NODE_ENV=development",
-    "vendor": "cp -rf ./node_modules/springboard-css ./assets/vendor/ && cp -rf ./node_modules/mathsass ./assets/vendor/ && cp -rf ./node_modules/modularscale-sass ./assets/vendor/",
+    "vendor": "cp -rf ./node_modules/springboard-css ./assets/sass/vendor/ && cp -rf ./node_modules/mathsass ./assets/sass/vendor/ && cp -rf ./node_modules/modularscale-sass ./assets/sass/vendor/",
     "build": "yarn vendor && webpack --mode=development --env.NODE_ENV=production && webpack --mode=development --env.NODE_ENV=development",
     "push": "git add . && git commit -m 'update from dev' && git push",
     "update": "git submodule update --init --recursive"
