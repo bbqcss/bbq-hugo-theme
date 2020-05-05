@@ -1,3 +1,3 @@
-module github.com/springboard/springboard-hugo-theme.git
+module github.com/springboardcss/springboard-hugo-theme.git
 
 go 1.14
