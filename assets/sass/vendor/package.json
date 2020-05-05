@@ -1,14 +1,13 @@
 {
   "name": "springboard-css",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Springboard CSS",
   "main": "index.js",
   "scripts": {
     "start": "webpack -w --mode=development --env.NODE_ENV=development",
-    "vendor": "cp -rf ./node_modules/springboard-css ./assets/sass/vendor/",
     "build": "yarn vendor && webpack --mode=development --env.NODE_ENV=production && webpack --mode=development --env.NODE_ENV=development",
-    "push": "git add . && git commit -m 'update from dev' && git push",
-    "update": "git submodule update --init --recursive"
+    "vendor": "cp -rf ./node_modules/mathsass ./src/sass/vendor/ && cp -rf ./node_modules/modularscale-sass ./src/sass/vendor/",
+    "push": "git add . && git commit -m 'update from dev' && git push"
   },
   "repository": {
     "type": "git",
@@ -26,8 +25,7 @@
     "core-js": "^3.6.5",
     "mathsass": "^0.11.0",
     "modularscale-sass": "^3.0.10",
-    "normalize.css": "^8.0.1",
-    "springboard-css": "^1.0.0"
+    "normalize.css": "^8.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^9.7.6",
