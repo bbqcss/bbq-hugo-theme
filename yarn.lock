@@ -4002,9 +4002,9 @@ split-string@^3.0.1, split-string@^3.0.2:
     extend-shallow "^3.0.0"
 
 springboard-css@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/springboard-css/-/springboard-css-1.0.1.tgz#64291f51ecb0386eb73df388c5de311d7c699abc"
-  integrity sha512-7JaTXqEW2tpwuY2MpHoKg/BhRrDxSGd5aoCyGpkV5a8bbut0NFFwskS7VGxhuwlojmF7IFzZI+uDI7o+EiMrZQ==
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/springboard-css/-/springboard-css-1.0.2.tgz#9de0d34b394cb655c6920517fc9714ff2db28db4"
+  integrity sha512-U0dCGaMes1BHqYihRRY4JWEm3EuErJsbu2UhQvN313W98B8SZbTTCSN1aHlJ6MIGfs2pt82SBzsW6dNyMahfEg==
   dependencies:
     caniuse-lite "^1.0.30001050"
     chokidar "^3.4.0"
