@@ -1,0 +1,9 @@
+title: Springboard
+module:
+  hugoVersion:
+    extended: true
+    max: ""
+    min: "0.69.2"
+  noProxy: none
+  # private: '*.*'
+  proxy: direct
